@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atendimento de serviço - Salão Senac</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+    <header>
+        <img src="img/ico-logo.png" alt="Logo Senac">
+        <h1> Atendimento de serviço - Salão Senac</h1>
+    </header>
+
+    <main>
+        <section id="agendamento">
+            <h2> Registro de Serviço</h2>
+            <form id="agendamentoForm">
+                <label for="nomeCliente">Nome do Cliente:</label>
+                <input type="text" id="nomeCliente" required>
+
+
+                <label for="formaPagamento">Forma de pagamento</label>
+                <select id="formaPagamento" required>
+                    <option value="pix">pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Credito">Credito</option>
+                    <option value="Debito">Debito</option>
+                </select>
+                
+                <br><br>
+
+                <label for="servico">Serviço(s) prestado:</label>
+                <select id="servico">
+                    <option value="" disabled selected>Selecione o serviço</option>
+                    <option value="corte">Corte de Cabelo</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="Barba">Barba</option>
+                    <option value="Depilacao">Depilação</option>
+                </select>
+
+            <div id="resultadoAgendamento"></div>
+        </section>
+
+        <section id="group">
+                <input type="date" id="data">
+                <label for="horaInicio">Hora Início</label>
+                <input type="time" id="horaInicio" placeholder="Hora Início" required>
+                <label for="horaFinal">Hora final</label>
+                <input type="time" id="horaFinal" placeholder="Hora Final" required>
+            <br>
+            <br>
+
+
+           <label for="produtosUtilizados">Produtos Utilizados</label>
+           <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
+            <option value="" disabled selected>Produtos Utilizados</option>
+            <option value="Corte de Cabelo - (Espuma, loção, shampoo)">Corte de Cabelo - (Espuma, loção, shampoo)</option>
+            <option value="Manicure - (Esmalte, Algodão, Acetona, Crema)">Manicure - (Esmalte, Algodão, Acetona, Crema)</option>
+            <option value="Barba - (Espuma, Creme, Loção)">Barba - (Espuma, Creme, Loção)</option>
+            <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
+           </select>
+        </section>
+
+        <section id="pagamento">
+            <h2>Pagamento de Serviços</h2>
+            <form id="pagamentoForm">
+                <label for="servicoPago">Serviço:</label>
+                <select id="servicoPago" required>
+                    <option value="" disabled selected>Selecione o serviço</option>
+                    <option value="corte">Corte de Cabelo</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="Barba">Barba</option>
+                    <option value="Depilacao">Depilação</option>
+                </select>
+
+                <label for="valorPago">Valor:</label>
+                <input type="text" id="valorPago"readonly>
+
+        </section>
+
+        <section id="funcionario" >
+           <label for="profissional">Funcionario que realizou o atendimento</label>
+           <select id="profissional" required>
+            <option value="" disabled selected>Selecione o funcionário</option>
+             <option value="Danilo"> Danilo</option>
+             <option value="Ana">Ana</option>
+             <option value="Ricardo">Ricardo</option>
+             <option value="João">João</option>
+           </select>
+        </section>
+    </main>
+    <div class="registra">
+        <button type="button"id="registrarServico">Registrar Serviço</button>
+    </div>
+    <div class="limpar">
+        <button type="reset">Limpar</button>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 Senac</p>
+    </footer>
+
+    <script src="agendamento.js"></script>
+</body>
+</html>

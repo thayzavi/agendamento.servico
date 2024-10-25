@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Login</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('img/Design\ sem\ nome\ \(12\).png') no-repeat;
+    }
+    .container{
+        width: 420px;
+        background-color:#ffffffc0;
+        color: #fff;
+        border-radius: 10px;
+        padding: 30px 40px;
+        border: 3px solid #c5c1c1;
+        box-shadow: 0 0 10px #333;
+    }
+    .container h1{
+        font-size: 36px;
+        text-align: center;
+        color: #f38f4c;
+    }
+    .container .input-box{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0 ;
+    }
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #535353;
+        border-radius: 40px;
+        font-size: 16px;
+        color: #000000;
+        padding: 20px 45px 20px 20px;
+    }
+    .input-box input::placeholder{
+        color: #000000;
+    
+    }.input-box i {
+        position: absolute;
+        right: 20px;
+        transform: translateY(-50%);
+        top: 50%;
+        font-size: 20px;
+        color: #ff9102;
+    }
+    .container .senha{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+        color: #000000; 
+    }
+    .senha label input {
+        accent-color: #ffae44;
+        margin-right: 3px;
+    
+    }
+    .senha a {
+        color: #000000;
+        text-decoration: none;
+    
+    }
+    .senha a:hover {
+        text-decoration: underline;
+    }
+    button{
+        width: 100%;
+        height: 45px;
+        background: #f38f4c;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px #fff7f7;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    .container .registrar-link{
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+    .registrar-link p a {
+        color: #ff9102;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .registrar-link p{
+        color: #000000;
+    }
+    .registrar-link p a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="Usuario" placeholder="Usuario" required>
+                <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="senha" placeholder="Senha" required>
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" id="email" placeholder="E-mail" required>
+                <i class="bi bi-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="tel" id="telefone" name= "telefone" placeholder="(99)99999-9999">
+                <i class="bi bi-telephone"></i>
+            </div>
+            
+            <div class="class-btn">
+               <button type="button" onclick="validarFormulario()">Entrar</button>
+            </div>
+    
+            <div class="registrar-link">
+                <p>Ja está cadastrado? <a href="index.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        // função para validar o form
+        function validarFormulario(){
+            var Usuario = document.getElementById("Usuario").value;
+            var senha = document.getElementById("senha").value;
+            var email = document.getElementById("email").value;
+            var telefone = document.getElementById("telefone").value;
+
+            if (Usuario=== ""){
+                alert("Por favor preecha o campo usuário.");
+                return false;
+            }
+            if (senha === ""){
+                alert("Preecha o campo senha.");
+                return false;
+            }
+            if (email === ""){
+                alert("Preecha o campo E-mail.");
+                return false;
+            }
+            if (telefone === ""){
+                alert("Preecha o campo telefone.");
+                return false;
+            }
+
+            redirecionarRegistraAtendimento();
+        }
+        // função para ir para outra página
+        function redirecionarRegistraAtendimento (){
+        window.location.href = "agendamento.html"
+        }
+    </script>
+</body>
+</html>
