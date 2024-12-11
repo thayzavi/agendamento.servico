@@ -5,13 +5,12 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-img{
-    height: 50px;
+.logo {
+    width: 100px;
+    height: auto;
     display: block;
     margin: 0 auto;
-    width: 50px;
-
-}
+    }
 
 header {
     background-color: #0372bd;
@@ -33,7 +32,7 @@ section {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #0372bd;
     color: white;
     padding: 10px;
     border: none;
@@ -43,12 +42,12 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #0372bd;
 }
 
 footer {
     text-align: center;
-    background-color: #2980b9;
+    background-color: #0372bd;
     color: white;
     padding: 10px;
     position: relative;
