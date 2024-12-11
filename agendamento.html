@@ -19,31 +19,14 @@
             <form id="agendamentoForm">
                 <label for="nomeCliente">Nome do Cliente:</label>
                 <input type="text" id="nomeCliente" required>
-
-
-                <label for="formaPagamento">Forma de pagamento</label>
-                <select id="formaPagamento" required>
-                    <option value="pix">pix</option>
-                    <option value="Dinheiro">Dinheiro</option>
-                    <option value="Credito">Credito</option>
-                    <option value="Debito">Debito</option>
-                </select>
                 
                 <br><br>
-
-                <label for="servico">Serviço(s) prestado:</label>
-                <select id="servico">
-                    <option value="" disabled selected>Selecione o serviço</option>
-                    <option value="corte">Corte de Cabelo</option>
-                    <option value="manicure">Manicure</option>
-                    <option value="Barba">Barba</option>
-                    <option value="Depilacao">Depilação</option>
-                </select>
 
             <div id="resultadoAgendamento"></div>
         </section>
 
         <section id="group">
+                <label for="date">Dia</label>
                 <input type="date" id="data">
                 <label for="horaInicio">Hora Início</label>
                 <input type="time" id="horaInicio" placeholder="Hora Início" required>
@@ -52,15 +35,6 @@
             <br>
             <br>
 
-
-           <label for="produtosUtilizados">Produtos Utilizados</label>
-           <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
-            <option value="" disabled selected>Produtos Utilizados</option>
-            <option value="Corte de Cabelo - (Espuma, loção, shampoo)">Corte de Cabelo - (Espuma, loção, shampoo)</option>
-            <option value="Manicure - (Esmalte, Algodão, Acetona, Crema)">Manicure - (Esmalte, Algodão, Acetona, Crema)</option>
-            <option value="Barba - (Espuma, Creme, Loção)">Barba - (Espuma, Creme, Loção)</option>
-            <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
-           </select>
         </section>
 
         <section id="pagamento">
@@ -78,6 +52,28 @@
                 <label for="valorPago">Valor:</label>
                 <input type="text" id="valorPago"readonly>
 
+                <label for="formaPagamento">Forma de pagamento</label>
+                <select id="formaPagamento" required>
+                    <option value="pix">Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Credito">Credito</option>
+                    <option value="Debito">Debito</option>
+                </select>
+
+                <label for="desconto">Desconto (%):</label>
+                <input type="number" id="desconto" placeholder="0" min="0" max="100">
+
+        </section>
+
+        <section id="produtosUtilizados">
+            <label for="produtosUtilizados">Produtos Utilizados</label>
+           <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
+            <option value="" disabled selected>Produtos Utilizados</option>
+            <option value="Corte de Cabelo - (Espuma, loção, shampoo)">Corte de Cabelo - (Espuma, loção, shampoo)</option>
+            <option value="Manicure - (Esmalte, Algodão, Acetona, Crema)">Manicure - (Esmalte, Algodão, Acetona, Crema)</option>
+            <option value="Barba - (Espuma, Creme, Loção)">Barba - (Espuma, Creme, Loção)</option>
+            <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
+           </select>
         </section>
 
         <section id="funcionario" >
