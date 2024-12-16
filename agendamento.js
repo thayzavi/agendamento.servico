@@ -1,4 +1,3 @@
-
 // Preços dos serviços
 let precosServicos = {
     corte: 50,
@@ -12,33 +11,24 @@ document.getElementById('servicoPago').addEventListener('change', function() {
     const valorServico = precosServicos[servicoSelecionado];
     document.getElementById('valorPago').value = `R$ ${valorServico}`;
 });
-
-
 // validar registro
 document.getElementById("registrarServico").addEventListener("click", function(){
     const nomeCliente = document.getElementById("nomeCliente").value;
+    const formaPagamento = document.getElementById("formaPagamento").value;
+    const servico = document.getElementById("servico").value;
     const data = document.getElementById("data").value;
     const horaInicio = document.getElementById("horaInicio").value;
     const horaFinal = document.getElementById("horaFinal").value;
-    const servicoPago = document.getElementById("servicoPago").value;
    const produtosUtilizados = document.getElementById('produtosUtilizados').value;
     const profissional = document.getElementById("profissional").value;
-    const desconto = parseFloat(document.getElementById("desconto").value) || 0;
-    
-    if (nomeCliente && data && horaInicio && horaFinal && servicoPago && produtosUtilizados && profissional ) { 
-            const valorServico = precosServicos[servicoPago];
-            const valorComDesconto = valorServico - (valorServico) * (desconto / 100);
-
+    if (nomeCliente && servico ) {
         alert(`Serviço registrado com sucesso! 
 Cliente: ${nomeCliente}
-Serviço: ${servicoPago}
+Serviço: ${servico}
 Data: ${data}
 Hora: ${horaInicio} - ${horaFinal}
 Profissional: ${profissional}
-produtosUtilizados: ${produtosUtilizados}
-Valor Original: R$ ${valorServico.toFixed(2)}
-Desconto Aplicado: ${desconto}%
-Valor Final: R$ ${valorComDesconto.toFixed(2)}`);
+produtosUtilizados: ${produtosUtilizados}`);
     } else {
         alert("Preencha os campos obrigatórios.");
     }

@@ -9,10 +9,9 @@
 </head>
 <body>
     <header>
-        <img src="img/senac_logo_branco.png" alt="" class="logo">
+        <img class="logo" src="img/senac_logo_branco.png" alt="Logo Senac" >
         <h1> Atendimento de serviço - Salão Senac</h1>
     </header>
-
     <main>
         <section id="agendamento">
             <h2> Registro de Serviço</h2>
@@ -21,12 +20,9 @@
                 <input type="text" id="nomeCliente" required>
                 
                 <br><br>
-
             <div id="resultadoAgendamento"></div>
         </section>
-
         <section id="group">
-                <label for="date">Dia</label>
                 <input type="date" id="data">
                 <label for="horaInicio">Hora Início</label>
                 <input type="time" id="horaInicio" placeholder="Hora Início" required>
@@ -34,9 +30,17 @@
                 <input type="time" id="horaFinal" placeholder="Hora Final" required>
             <br>
             <br>
-
         </section>
-
+        <section id="group">
+            <label for="produtosUtilizados">Produtos Utilizados</label>
+           <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
+            <option value="" disabled selected>Produtos Utilizados</option>
+            <option value="Corte de Cabelo - (Espuma, loção, shampoo)">Corte de Cabelo - (Espuma, loção, shampoo)</option>
+            <option value="Manicure - (Esmalte, Algodão, Acetona, Crema)">Manicure - (Esmalte, Algodão, Acetona, Crema)</option>
+            <option value="Barba - (Espuma, Creme, Loção)">Barba - (Espuma, Creme, Loção)</option>
+            <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
+           </select>
+        </section>
         <section id="pagamento">
             <h2>Pagamento de Serviços</h2>
             <form id="pagamentoForm">
@@ -48,34 +52,17 @@
                     <option value="Barba">Barba</option>
                     <option value="Depilacao">Depilação</option>
                 </select>
-
                 <label for="valorPago">Valor:</label>
                 <input type="text" id="valorPago"readonly>
 
                 <label for="formaPagamento">Forma de pagamento</label>
                 <select id="formaPagamento" required>
-                    <option value="pix">Pix</option>
+                    <option value="pix">pix</option>
                     <option value="Dinheiro">Dinheiro</option>
                     <option value="Credito">Credito</option>
                     <option value="Debito">Debito</option>
                 </select>
-
-                <label for="desconto">Desconto (%):</label>
-                <input type="number" id="desconto" placeholder="0" min="0" max="100">
-
         </section>
-
-        <section id="produtosUtilizados">
-            <label for="produtosUtilizados">Produtos Utilizados</label>
-           <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
-            <option value="" disabled selected>Produtos Utilizados</option>
-            <option value="Corte de Cabelo - (Espuma, loção, shampoo)">Corte de Cabelo - (Espuma, loção, shampoo)</option>
-            <option value="Manicure - (Esmalte, Algodão, Acetona, Crema)">Manicure - (Esmalte, Algodão, Acetona, Crema)</option>
-            <option value="Barba - (Espuma, Creme, Loção)">Barba - (Espuma, Creme, Loção)</option>
-            <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
-           </select>
-        </section>
-
         <section id="funcionario" >
            <label for="profissional">Funcionario que realizou o atendimento</label>
            <select id="profissional" required>
@@ -98,7 +85,6 @@
     <footer>
         <p>&copy; 2024 Senac</p>
     </footer>
-
     <script src="agendamento.js"></script>
 </body>
 </html>
