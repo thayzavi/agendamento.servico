@@ -24,9 +24,9 @@ Este repositório contém o código-fonte de um sistema voltado para o registro 
 ## Requisitos do Sistema
 
 - Navegador moderno e atualizado (Google Chrome, Mozilla Firefox, etc.).
-- Acesso à internet para utilizar o sistema hospedado.
+![Captura de tela_16-12-2024_194755_didactic-lamp-ggwvjqqj769f9777-5500 app github dev](https://github.com/user-attachments/assets/3ec56bf5-9fb0-4e0c-9cf6-6cc267b11c20)
 
----![Captura de tela_16-12-2024_185510_improved-disco-ggwvjqqjrvrh9wwj-5500 app github dev](https://github.com/user-attachments/assets/42a15c0e-8972-43ca-86f2-999760311777)
+
 
 
 Desenvolvido com ❤ por [thayzavi](https://github.com/thayzavi).
