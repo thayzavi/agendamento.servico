@@ -10,7 +10,7 @@
 <body>
     <header>
         <img src="img/senac_logo_branco.png" alt="" class="logo">
-        <h1> Registro de serviço - Salão Senac</h1>
+        <h1> Atendimento de serviço - Salão Senac</h1>
     </header>
 
     <main>
@@ -35,20 +35,9 @@
                 <input type="time" id="horaFinal" placeholder="Hora Final" required>
             <br>
             <br>
-        </section>
-        <section id="produtosUtilizados">
-            <label for="produtosUtilizados">Produtos Utilizados</label>
-           <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
-            <option value="" disabled selected>Produtos Utilizados</option>
-            <option value="Corte de Cabelo - (Espuma, loção, shampoo)">Corte de Cabelo - (Espuma, loção, shampoo)</option>
-            <option value="Manicure - (Esmalte, Algodão, Acetona, Crema)">Manicure - (Esmalte, Algodão, Acetona, Crema)</option>
-            <option value="Barba - (Espuma, Creme, Loção)">Barba - (Espuma, Creme, Loção)</option>
-            <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
-           </select>
-        </section>
 
-        <section id="pagamento">
-            <h2>Pagamento de Serviços</h2>
+        </section>
+        <section id="group">
             <form id="pagamentoForm">
                 <label for="servicoPago">Serviço:</label>
                 <select id="servicoPago" required>
@@ -58,7 +47,20 @@
                     <option value="Barba">Barba</option>
                     <option value="Depilacao">Depilação</option>
                 </select>
-                
+                <br><br>
+            <label for="produtosUtilizados">Produtos Utilizados</label>
+            <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
+             <option value="" disabled selected>Produtos Utilizados</option>
+             <option value="Corte de Cabelo - (Espuma, loção, shampoo)">Corte de Cabelo - (Espuma, loção, shampoo)</option>
+             <option value="Manicure - (Esmalte, Algodão, Acetona, Crema)">Manicure - (Esmalte, Algodão, Acetona, Crema)</option>
+             <option value="Barba - (Espuma, Creme, Loção)">Barba - (Espuma, Creme, Loção)</option>
+             <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
+            </select>
+        </section>
+
+        <section id="pagamento">
+            <h2>Pagamento de Serviços</h2>
+        
                 <label for="valorPago">Valor:</label>
                 <input type="text" id="valorPago"readonly>
 
@@ -77,9 +79,9 @@
         </section>
 
         <section id="funcionario" >
-           <label for="profissional">Funcionario que realizou o atendimento</label>
+           <label for="profissional">profissional que realizou o atendimento</label>
            <select id="profissional" required>
-            <option value="" disabled selected>Selecione o funcionário</option>
+            <option value="" disabled selected>Selecione o profissional...</option>
              <option value="Danilo"> Danilo</option>
              <option value="Ana">Ana</option>
              <option value="Ricardo">Ricardo</option>
