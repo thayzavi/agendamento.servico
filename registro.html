@@ -3,41 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Atendimento de serviço - Salão Senac</title>
+    <title> Registro de serviço - Salão Senac</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="agendamento.css">
+    <link rel="stylesheet" href="registro.css">
 </head>
 <body>
     <header>
-        <img class="logo"src="img/senac_logo_branco.png" alt="Logo Senac" >
+        <img src="img/senac_logo_branco.png" alt="" class="logo">
         <h1> Atendimento de serviço - Salão Senac</h1>
     </header>
+
     <main>
         <section id="agendamento">
             <h2> Registro de Serviço</h2>
             <form id="agendamentoForm">
                 <label for="nomeCliente">Nome do Cliente:</label>
                 <input type="text" id="nomeCliente" required>
-                <label for="formaPagamento">Forma de pagamento</label>
-                <select id="formaPagamento" required>
-                    <option value="pix">pix</option>
-                    <option value="Dinheiro">Dinheiro</option>
-                    <option value="Credito">Credito</option>
-                    <option value="Debito">Debito</option>
-                </select>
-                
+
+
                 <br><br>
-                <label for="servico">Serviço(s) prestado:</label>
-                <select id="servico">
-                    <option value="" disabled selected>Selecione o serviço</option>
-                    <option value="corte">Corte de Cabelo</option>
-                    <option value="manicure">Manicure</option>
-                    <option value="Barba">Barba</option>
-                    <option value="Depilacao">Depilação</option>
-                </select>
+
             <div id="resultadoAgendamento"></div>
         </section>
+
         <section id="group">
+            <label for="date">Dia</label>
                 <input type="date" id="data">
                 <label for="horaInicio">Hora Início</label>
                 <input type="time" id="horaInicio" placeholder="Hora Início" required>
@@ -45,6 +35,8 @@
                 <input type="time" id="horaFinal" placeholder="Hora Final" required>
             <br>
             <br>
+
+
            <label for="produtosUtilizados">Produtos Utilizados</label>
            <select id="produtosUtilizados" required style="width: 350px; margin-bottom: 30px">
             <option value="" disabled selected>Produtos Utilizados</option>
@@ -54,6 +46,7 @@
             <option value="Depilação - (Cera, Palitos de madeira, Folhas depilatórias )">Depilação - (Cera, Palitos de madeira, Folhas depilatórias )</option>
            </select>
         </section>
+
         <section id="pagamento">
             <h2>Pagamento de Serviços</h2>
             <form id="pagamentoForm">
@@ -65,9 +58,24 @@
                     <option value="Barba">Barba</option>
                     <option value="Depilacao">Depilação</option>
                 </select>
+                
                 <label for="valorPago">Valor:</label>
                 <input type="text" id="valorPago"readonly>
+
+                <label for="formaPagamento">Forma de pagamento</label>
+                <select id="formaPagamento" required>
+                    <option value="pix">Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Credito">Credito</option>
+                    <option value="Debito">Debito</option>
+                </select>
+
+             <label for="desconto">Desconto (%):</label>
+            <input type="number" id="desconto" placeholder="0" min="0" max="100">
+
+
         </section>
+
         <section id="funcionario" >
            <label for="profissional">Funcionario que realizou o atendimento</label>
            <select id="profissional" required>
@@ -90,6 +98,7 @@
     <footer>
         <p>&copy; 2024 Senac</p>
     </footer>
+
     <script src="registro.js"></script>
 </body>
 </html>
