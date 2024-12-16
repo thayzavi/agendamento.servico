@@ -24,6 +24,13 @@ Este repositório contém o código-fonte de um sistema voltado para o registro 
 ## Requisitos do Sistema
 
 - Navegador moderno e atualizado (Google Chrome, Mozilla Firefox, etc.).
+
+
+
+
+
+
+
 ![Captura de tela_16-12-2024_194755_didactic-lamp-ggwvjqqj769f9777-5500 app github dev](https://github.com/user-attachments/assets/3ec56bf5-9fb0-4e0c-9cf6-6cc267b11c20)
 
 
