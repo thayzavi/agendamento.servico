@@ -31,7 +31,8 @@ Este repositório contém o código-fonte de um sistema voltado para o registro 
 
 
 
-![Captura de tela_16-12-2024_20435_bookish-space-dollop-xjqg7ww7rg7c6q5g-5500 app github dev](https://github.com/user-attachments/assets/faa8e13b-fef2-4ee0-b9d6-c8bfa913e99d)
+![Captura de tela_16-12-2024_2066_bookish-space-dollop-xjqg7ww7rg7c6q5g-5500 app github dev](https://github.com/user-attachments/assets/2d88c03b-8869-49b4-bfb4-7e2fa3748993)
+
 
 
 
